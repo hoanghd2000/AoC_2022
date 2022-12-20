@@ -24,7 +24,7 @@ def Day16a(file):
     # Simulate all possible scenarios for the whole process duration
     answer = {}
     q = collections.deque() # each node represents the current state, consists of minute_left, cur_valve, pressure_released (by end of that min), open_valves
-    q.append((30, start_valve, 0, 0))
+    q.append((end_minute, start_valve, 0, 0))
     while q:
         cur = q.popleft()
         # print(cur)
